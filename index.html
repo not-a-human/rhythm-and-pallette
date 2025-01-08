@@ -32,7 +32,7 @@
                 background-size: cover;
                 height: 80vh;
             }
-            #aboutus{
+            body{
                 background-color: var(--gray);
             }
             #footer {
@@ -61,6 +61,12 @@
             }
             .card {
                 background: none !important;
+                border: none;
+            }
+            .card img {
+                --size: 380px;
+                height: var(--size);
+                width: var(--size);
             }
             .text-right{
                 text-align: right !important;
@@ -113,7 +119,7 @@
                     <div class="p-3">
                         <div class="card mb-3">
                             <div class="row g-0">
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <img src="person1.jpeg" class="img-fluid rounded-start">
                                 </div>
                                 <div class="col-md-8">
@@ -148,7 +154,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <img src="person2.jpeg" class="img-fluid rounded-start">
                                 </div>
                             </div>
@@ -164,7 +170,7 @@
             }
             
             window.onload = () => {
-                loadContent('home');
+                loadContent('about');
             };
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
